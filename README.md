@@ -13,3 +13,11 @@ CREATE TABLE admin_table
     admin_pw VARCHAR2(20) not NULL
 );
 ```
+
+권한 부여하기<br>
+
+``` sql
+GRANT CONNECT to classmanager;// 데이터베이스에 접속할 수 있는 권한
+GRANT RESOURCE to classmanager;// CREATE, ALTER, DROP, 등의 데이터베이스 객체를 조작할 수 있는 권한
+GRANT dba to classmanager;// 데이터베이스의 모든 작업을 수행할 수 있는 최고 권한을 제공함
+```
